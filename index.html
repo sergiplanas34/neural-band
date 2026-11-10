@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Neural Band · La pulsera que lee tus músculos</title>
+  <meta name="description" content="Trabajo de Interacción Persona-Ordenador sobre la Meta Neural Band, una pulsera de electromiografía (sEMG) para controlar dispositivos con microgestos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== MENÚ SUPERIOR ===== -->
+  <header class="topbar">
+    <nav class="nav">
+      <a href="#inicio" class="logo"><span class="logo-dot"></span>Neural Band</a>
+      <ul class="nav-links">
+        <li><a href="#que-es">Qué es</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#gestos">Gestos</a></li>
+        <li><a href="#galeria">Fotos</a></li>
+        <li><a href="#evolucion">Evolución</a></li>
+        <li><a href="#ficha">Ficha técnica</a></li>
+        <li><a href="#mas-info" class="nav-cta">Más info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== PORTADA ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Interacción Persona-Ordenador · Dispositivo 2025–2026</p>
+        <h1>Meta Neural Band</h1>
+        <p class="hero-lead">
+          Una pulsera que no necesita que toques nada, que mires a una cámara ni que hables en voz alta.
+          Lee la actividad eléctrica de los músculos del antebrazo y la convierte en órdenes:
+          un pequeño pellizco entre el pulgar y el índice basta para hacer clic.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Electromiografía de superficie (sEMG)</span>
+          <span class="tag">Lanzada el 30-09-2025</span>
+          <span class="tag">Meta Reality Labs</span>
+        </div>
+      </div>
+
+      <!-- Ilustración propia (SVG): señal muscular que se convierte en una orden -->
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="band-svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7cf5d6"/>
+              <stop offset="1" stop-color="#6c8cff"/>
+            </linearGradient>
+          </defs>
+          <circle cx="200" cy="200" r="170" class="ring ring-1"/>
+          <circle cx="200" cy="200" r="130" class="ring ring-2"/>
+          <ellipse cx="200" cy="200" rx="120" ry="58" fill="none" stroke="url(#g1)" stroke-width="22"/>
+          <rect x="168" y="128" width="64" height="40" rx="12" fill="#11182b" stroke="url(#g1)" stroke-width="3"/>
+          <circle cx="200" cy="148" r="5" fill="#7cf5d6"/>
+          <g fill="#7cf5d6">
+            <circle cx="96" cy="214" r="5"/><circle cx="128" cy="240" r="5"/>
+            <circle cx="166" cy="254" r="5"/><circle cx="234" cy="254" r="5"/>
+            <circle cx="272" cy="240" r="5"/><circle cx="304" cy="214" r="5"/>
+          </g>
+          <polyline class="emg" points="40,330 80,330 92,312 104,346 116,300 128,352 140,318 152,330 360,330"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== QUÉ ES ===== -->
+    <section id="que-es" class="section">
+      <div class="section-head">
+        <span class="num">01</span>
+        <h2>¿Qué es y por qué la he elegido?</h2>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>
+            La <strong>Meta Neural Band</strong> es una pulsera de tela que se lleva justo por encima del hueso de la muñeca,
+            en la mano con la que escribes. Por dentro tiene electrodos que captan las pequeñas señales eléctricas
+            que el sistema nervioso envía a los músculos del antebrazo cuando quieres mover los dedos.
+            Un modelo de inteligencia artificial interpreta esas señales en la propia pulsera y las envía por Bluetooth
+            como órdenes: seleccionar, volver atrás, desplazarse, subir el volumen…
+          </p>
+          <p>
+            Se presentó en el Meta Connect del 17 de septiembre de 2025 y salió a la venta en Estados Unidos el 30 de ese mes,
+            como mando de las gafas <em>Meta Ray-Ban Display</em> (799 $ el conjunto). Es el primer producto
+            de consumo que nace de la compra de la start-up CTRL-labs en 2019.
+          </p>
+        </div>
+        <aside class="highlight-card">
+          <h3>La idea clave para la IPO</h3>
+          <p>
+            Casi todos los dispositivos de entrada que usamos desde hace décadas exigen <strong>contacto</strong>
+            (teclado, ratón, pantalla) o <strong>que una cámara te vea</strong> (Kinect, seguimiento de manos).
+            Esta pulsera rompe con las dos cosas: detecta la <em>intención</em> de moverse incluso con la mano
+            apoyada en la pierna o dentro del bolsillo.
+          </p>
+          <p class="small">
+            Por eso la he escogido: no es un ratón mejor, sino un nuevo tipo de canal de comunicación entre la persona y el ordenador.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== BENEFICIOS ===== -->
+    <section id="beneficios" class="section section-alt">
+      <div class="section-head">
+        <span class="num">02</span>
+        <h2>Beneficios para la interacción</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🤫</div>
+          <h3>Discreta y silenciosa</h3>
+          <p>Permite manejar un dispositivo sin hablar y sin levantar la mano. Encaja en una reunión, en el metro o en una biblioteca, donde la voz o los gestos amplios resultan incómodos.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">✋</div>
+          <h3>Sin superficie ni cámara</h3>
+          <p>No hace falta una mesa como con el ratón ni estar dentro del campo de visión de un sensor. Funciona a oscuras, con la mano tapada o con el brazo relajado al lado del cuerpo.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Esfuerzo mínimo</h3>
+          <p>Los gestos son micromovimientos de los dedos. Evita el cansancio de mantener los brazos en alto que aparece con los gestos en el aire (el llamado <em>gorilla arm</em>).</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🧠</div>
+          <h3>Funciona “de serie”</h3>
+          <p>Meta entrenó sus modelos con datos de casi 200.000 voluntarios, de modo que la pulsera reconoce los gestos de alguien nuevo sin calibrarla primero. Con el uso se puede personalizar.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">♿</div>
+          <h3>Accesibilidad</h3>
+          <p>Como capta la señal antes de que el movimiento sea visible, también sirve a personas con poca movilidad en manos o brazos. Meta investiga esta vía con la Universidad de Utah.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📳</div>
+          <h3>Respuesta háptica</h3>
+          <p>Una pequeña vibración confirma que el gesto se ha reconocido. Es retroalimentación inmediata, uno de los principios básicos de usabilidad, sin necesidad de mirar una pantalla.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== GESTOS ===== -->
+    <section id="gestos" class="section">
+      <div class="section-head">
+        <span class="num">03</span>
+        <h2>Cómo se usa: el vocabulario de gestos</h2>
+      </div>
+      <p class="intro">
+        En lugar de botones, la interfaz se basa en un pequeño “idioma” de gestos que cualquiera aprende en minutos.
+        Estos son los principales de la versión comercial:
+      </p>
+      <div class="gesture-grid">
+        <div class="gesture">
+          <div class="gesture-fig">👌</div>
+          <h3>Pulgar + índice</h3>
+          <p>Pellizco rápido para <strong>seleccionar / hacer clic</strong>.</p>
+        </div>
+        <div class="gesture">
+          <div class="gesture-fig">🤏</div>
+          <h3>Pulgar + corazón</h3>
+          <p>Pellizco para <strong>volver atrás</strong> o abrir el menú.</p>
+        </div>
+        <div class="gesture">
+          <div class="gesture-fig">👍</div>
+          <h3>Deslizar el pulgar</h3>
+          <p>Sobre el lateral del índice para <strong>desplazarse</strong> por listas.</p>
+        </div>
+        <div class="gesture">
+          <div class="gesture-fig">🔄</div>
+          <h3>Pellizcar y girar</h3>
+          <p>Como una rueda imaginaria, para <strong>volumen o zoom</strong>.</p>
+        </div>
+        <div class="gesture gesture-new">
+          <div class="gesture-fig">✍️</div>
+          <h3>Escritura neural <span class="badge">2026</span></h3>
+          <p>Escribir letras con el dedo índice sobre la mesa, la pierna o cualquier superficie para <strong>redactar mensajes</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section id="galeria" class="section section-alt">
+      <div class="section-head">
+        <span class="num">04</span>
+        <h2>Fotos</h2>
+      </div>
+      <div class="gallery">
+        <figure class="photo photo-big">
+          <img src="img/neural-band.jpg" alt="La Meta Neural Band, pulsera de tela con un pequeño módulo de cálculo en la parte superior">
+          <figcaption>La pulsera: banda de Vectran con el módulo de cálculo arriba y los electrodos por dentro.</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="img/neural-band-gafas.jpg" alt="Meta Neural Band junto a las gafas Meta Ray-Ban Display">
+          <figcaption>Junto a las gafas Meta Ray-Ban Display, a las que controla.</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="img/neural-band-uso.jpg" alt="Persona haciendo un gesto de pellizco con la pulsera puesta">
+          <figcaption>Un pellizco entre pulgar e índice equivale a un clic.</figcaption>
+        </figure>
+      </div>
+      <p class="credit">Imágenes: Meta (material de prensa).</p>
+    </section>
+
+    <!-- ===== EVOLUCIÓN ===== -->
+    <section id="evolucion" class="section">
+      <div class="section-head">
+        <span class="num">05</span>
+        <h2>Evolución: de dónde viene y a qué sustituye</h2>
+      </div>
+      <p class="intro">
+        La Neural Band es el último paso de una larga búsqueda: conseguir una entrada cada vez más natural,
+        que se adapte a la persona y no al revés. Cada etapa resolvió un problema de la anterior y dejó otro abierto.
+      </p>
+
+      <ol class="timeline">
+        <li class="tl-item">
+          <span class="tl-year">1868 · 1968</span>
+          <div class="tl-body">
+            <h3>Teclado y ratón</h3>
+            <p>El teclado hereda la máquina de escribir; Douglas Engelbart enseña el ratón en 1968. Son precisos, pero atan al usuario a una mesa.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2007</span>
+          <div class="tl-body">
+            <h3>Pantalla multitáctil</h3>
+            <p>Con los smartphones, el dedo pasa a ser el puntero. La interacción se vuelve móvil, pero obliga a mirar y tocar la pantalla.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2010 · 2013</span>
+          <div class="tl-body">
+            <h3>Gestos por cámara: Kinect y Leap Motion</h3>
+            <p>Aparece la interacción sin contacto, pero depende de que una cámara vea las manos, de la luz y de hacer gestos amplios que cansan.</p>
+          </div>
+        </li>
+        <li class="tl-item tl-key">
+          <span class="tl-year">2014</span>
+          <div class="tl-body">
+            <h3>Myo armband (Thalmic Labs)</h3>
+            <p>El antecedente directo: un brazalete con sensores EMG para controlar el ordenador con gestos. Era voluminoso, reconocía pocos gestos y había que calibrarlo. Se dejó de vender en 2018.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2015 · 2019</span>
+          <div class="tl-body">
+            <h3>CTRL-labs y la compra de Meta</h3>
+            <p>La start-up neoyorquina CTRL-labs adquiere las patentes de Myo en 2019 y, ese mismo año, Facebook (hoy Meta) la compra por una cifra estimada de entre 500 y 1.000 millones de dólares.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2021 · 2024</span>
+          <div class="tl-body">
+            <h3>Prototipos y gafas Orion</h3>
+            <p>Meta enseña sus primeros prototipos en 2021 y, en 2024, una pulsera ya muy pulida (nombre en clave <em>Ceres</em>) como mando de las gafas de realidad aumentada Orion.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">Jul 2025</span>
+          <div class="tl-body">
+            <h3>Artículo en <em>Nature</em></h3>
+            <p>Meta publica cómo sus modelos generalizan entre personas sin calibrar. En las pruebas, escribir a mano en el aire alcanzaba unas 20,9 palabras por minuto.</p>
+          </div>
+        </li>
+        <li class="tl-item tl-key">
+          <span class="tl-year">Sep 2025</span>
+          <div class="tl-body">
+            <h3>Lanzamiento comercial</h3>
+            <p>La Neural Band llega a las tiendas de EE. UU. con las Meta Ray-Ban Display. Por primera vez, una interfaz EMG se vende como producto de masas.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2026</span>
+          <div class="tl-body">
+            <h3>Escritura neural y apertura</h3>
+            <p>En el CES de enero se presenta la escritura neural; durante el año se extiende a WhatsApp, Messenger e Instagram y la plataforma se abre a desarrolladores externos.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="table-title">¿Cómo mejora a los dispositivos que sustituye?</h3>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>Criterio</th>
+              <th>Teclado / ratón</th>
+              <th>Pantalla táctil</th>
+              <th>Gestos por cámara</th>
+              <th>Voz</th>
+              <th class="col-hl">Neural Band</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Uso en movimiento</td>
+              <td class="no">No</td><td class="yes">Sí</td><td class="mid">Limitado</td><td class="yes">Sí</td><td class="yes col-hl">Sí</td>
+            </tr>
+            <tr>
+              <td>Sin mirar el dispositivo</td>
+              <td class="mid">En parte</td><td class="no">No</td><td class="mid">En parte</td><td class="yes">Sí</td><td class="yes col-hl">Sí</td>
+            </tr>
+            <tr>
+              <td>Discreto en público</td>
+              <td class="mid">En parte</td><td class="mid">En parte</td><td class="no">No</td><td class="no">No</td><td class="yes col-hl">Sí</td>
+            </tr>
+            <tr>
+              <td>Mano en reposo</td>
+              <td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="yes">Sí</td><td class="yes col-hl">Sí</td>
+            </tr>
+            <tr>
+              <td>Escribir texto largo</td>
+              <td class="yes">Sí</td><td class="yes">Sí</td><td class="no">No</td><td class="yes">Sí</td><td class="mid col-hl">Mejorando</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== FICHA TÉCNICA ===== -->
+    <section id="ficha" class="section section-alt">
+      <div class="section-head">
+        <span class="num">06</span>
+        <h2>Ficha técnica y limitaciones</h2>
+      </div>
+      <div class="two-col">
+        <dl class="specs">
+          <div><dt>Tecnología</dt><dd>Electromiografía de superficie (sEMG) + IA en el dispositivo</dd></div>
+          <div><dt>Batería</dt><dd>Hasta 18 horas</dd></div>
+          <div><dt>Resistencia al agua</dt><dd>IPX7</dd></div>
+          <div><dt>Material</dt><dd>Vectran, la fibra de los airbags de aterrizaje de los róveres de Marte</dd></div>
+          <div><dt>Peso</dt><dd>Unos 42 g</dd></div>
+          <div><dt>Conexión</dt><dd>Bluetooth</dd></div>
+          <div><dt>Tallas y colores</dt><dd>3 tallas · negro y arena</dd></div>
+          <div><dt>Precio</dt><dd>799 $ junto a las gafas Meta Ray-Ban Display</dd></div>
+        </dl>
+        <aside class="limits">
+          <h3>No todo es perfecto</h3>
+          <ul>
+            <li><strong>Ecosistema cerrado:</strong> oficialmente solo controla las gafas de Meta, aunque ya hay proyectos de la comunidad que la conectan a ordenadores.</li>
+            <li><strong>Disponibilidad:</strong> de momento solo se vende en Estados Unidos; la llegada a Europa se ha aplazado.</li>
+            <li><strong>Colocación:</strong> tiene que ir bien ajustada y en la posición correcta para leer bien la señal.</li>
+            <li><strong>Privacidad:</strong> son datos biométricos. Meta afirma que se procesan en la propia pulsera, pero es un tema que conviene vigilar.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== MÁS INFORMACIÓN ===== -->
+    <section id="mas-info" class="section">
+      <div class="section-head">
+        <span class="num">07</span>
+        <h2>Más información</h2>
+      </div>
+      <div class="links">
+        <a class="link-card" href="https://www.meta.com/emerging-tech/emg-wearable-technology/" target="_blank" rel="noopener">
+          <span class="link-src">meta.com</span>
+          <span class="link-title">Tecnología EMG de Meta (página oficial)</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-card" href="https://www.meta.com/ai-glasses/accessories/neural-band/" target="_blank" rel="noopener">
+          <span class="link-src">meta.com</span>
+          <span class="link-title">Meta Neural Band en la tienda oficial</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-card" href="https://www.meta.com/help/ai-glasses/764536076119235/" target="_blank" rel="noopener">
+          <span class="link-src">meta.com · ayuda</span>
+          <span class="link-title">Cómo se usa la Meta Neural Band</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-card" href="https://www.nature.com/articles/s41586-025-09255-w" target="_blank" rel="noopener">
+          <span class="link-src">Nature · 2025</span>
+          <span class="link-title">A generic non-invasive neuromotor interface for human-computer interaction</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-card" href="https://github.com/facebookresearch/generic-neuromotor-interface" target="_blank" rel="noopener">
+          <span class="link-src">GitHub · Meta Research</span>
+          <span class="link-title">Datos y modelos sEMG publicados por Meta</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="link-card" href="https://www.meta.com/blog/ces-2026-meta-ray-ban-display-teleprompter-emg-handwriting-garmin-unified-cabin-university-of-utah-tetraski/" target="_blank" rel="noopener">
+          <span class="link-src">Blog de Meta · CES 2026</span>
+          <span class="link-title">Escritura neural y nuevos usos de la pulsera</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p><strong>Sergi Planas</strong> · Interacción Persona-Ordenador · ADET, Universidad de Salamanca · 2026</p>
+    <p class="small">Trabajo académico. Textos de elaboración propia a partir de las fuentes enlazadas. <a href="#inicio">Volver arriba ↑</a></p>
+  </footer>
+
+</body>
+</html>
